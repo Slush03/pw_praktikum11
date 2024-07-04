@@ -1,0 +1,42 @@
+/* General styling for the header wrapper */
+.header_wrapper {
+    width: 100%;
+    background-color: #f8f8f8; /* Adjust the background color as needed */
+    padding: 10px 0;
+    border-bottom: 2px solid #e7e7e7; /* Add a bottom border for separation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+/* Flexbox layout for the menu box */
+.header_menu_box {
+    display: flex;
+    justify-content: center; /* Center the menu items */
+    align-items: center; /* Center the menu items vertically */
+    flex-wrap: wrap; /* Allow wrapping if the menu items exceed the width */
+    max-width: 1200px; /* Maximum width for the menu */
+    margin: 0 auto; /* Center the menu box */
+    padding: 0 10px; /* Padding for responsiveness */
+}
+
+/* Styling for each menu item */
+.header_menu_box > div {
+    margin: 0 10px; /* Space between menu items */
+    text-align: center; /* Center align the menu items */
+}
+
+/* Image styling for each menu item */
+.header_menu_box img {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for menu items */
+.header_menu_box a:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Clearfix for floating elements */
+.clear {
+    clear: both;
+}
